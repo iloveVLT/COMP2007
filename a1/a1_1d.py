@@ -1,3 +1,4 @@
+# cgoh2475
 data=[]
     
 n=int(input()) #number of vertices
