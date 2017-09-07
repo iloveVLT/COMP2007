@@ -60,7 +60,6 @@ class DisjointSet:
         else:
             parent1.parent=parent2.data
 
-
     def findSet(self,node_id):
         u=self.hm[node_id]
         parent=self.hm[u.parent] #int parent id
