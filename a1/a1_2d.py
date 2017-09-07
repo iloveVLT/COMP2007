@@ -46,13 +46,10 @@ class DisjointSet:
     def union(self,set1,set2):
         node1=self.hm[set1]
         node2=self.hm[set2]
-        #print(type(node1),type(node1.parent))
-
-        #print(node2.parent)
+ 
         parent1=self.hm[node1.parent]
         parent2=self.hm[node2.parent]
         
-        #print(type(parent1),type(parent2))
         if parent1 is parent2: #same set
             return
 
@@ -68,7 +65,6 @@ class DisjointSet:
         u=self.hm[node_id]
         parent=self.hm[u.parent] #int parent id
         if parent is u:
-            #print("return")
             return parent.data
         u.parent=self.findSet(u.parent) #path compression
        
